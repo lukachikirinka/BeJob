@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+
+<body >
+
+<div class="main-form">
+    <form onSubmit = "return checkPassword(this)">
+        <div class="dato">
+            <h1> Create Account</h1>
+        </div>
+        <div class="dato">
+            <label class="titulos" for="name">Nombre</label><br>
+            <input class="input-box" type="text" id="nombre" onkeyup="check_name(nombre)" name="name" required pattern="^([A-Za-z]+?[ ]?|[A-Za-z]+['-]?)+$"><br>
+            <label class="input-msg-correct" id="msg_email">
+                Rellene este campo
+            </label>
+        </div>
+        <div class="dato">
+            <label class="titulos" for="email">Email</label><br>
+            <input class="input-box" onkeyup="check_email (email, msg_email);" type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+            <label class="input-msg-correct" id="msg_email">
+                Email invalido
+            </label>
+        </div>
+        <div class="dato">
+            <label class="titulos" for="Clave">Clave</label><br>
+            <input class="input-box" onkeyup="check_clave(clave, more_pwd);check_pswd(clave, confirm, same_pwd);;" type="password" id="clave" name="clave" minlength="8" required><br>
+            <label class="input-msg-correct" id="more_pwd">
+                Debe tener más de 8 caracteres
+            </label>
+        </div>
+        <div class="dato">
+            <label class="titulos" for="confirm">Confirme su clave</label><br>
+            <input class="input-box" onkeyup="check_pswd(clave, confirm, same_pwd);" type="password" id="confirm" name="confirm" minlength="8" required><br>
+            <label class="input-msg-correct" id="same_pwd">
+                Las contraseñas no coinciden
+            </label>
+        </div>
+        <div class="dato ">
+            <input class=" button" type="submit" value="ENVIAR">
+                <div id="msg"></div>
+    </form>
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    
+</script>

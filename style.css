@@ -1,0 +1,102 @@
+
+html, body {
+    background: linear-gradient(#4c4c75, #484a6a);
+    font-family: Arial, Helvetica, sans-serif;
+    color:#9da4b7;
+    margin: 0;
+    height: 100%;
+    font-size: 15px;
+    position: relative;
+}
+
+.titulos{
+    font-size: 12px;
+}
+
+.main-form{
+    background: linear-gradient(#272f53, #3a4464);
+    border-radius: 5px;
+    border: medium solid #d9ead3;
+    border-width: 1px;
+    border-color: rgb(78, 78, 87);
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.input-box:required{
+    border-radius: 2px;
+    height: 20px;
+    margin: 3px;
+    width: 100%;  
+    border-width: 3px;
+    border: solid;
+    border-color: transparent;
+} 
+
+
+.input-box-invalid{
+    border-radius: 2px;
+    height: 20px;
+    margin: 3px;
+    width: 100%;  
+    border-width: 3px;
+    border-color: red !important ;
+    border: solid;
+    background-image: url("imagenes/error-icon.svg") !important;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 99% ;
+} 
+
+.input-box-valid{
+    border: solid;
+    border-radius: 2px;
+    height: 20px;
+    margin: 3px;
+    width: 100%;  
+    border-width: 3px;
+    border-color: green  !important;
+    background-image: url("imagenes/success-icon.svg")  !important;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 99% ;
+}
+
+.input-msg-error{
+    font-size: 10px;
+    color: red;
+    margin: 3px;
+    visibility: visible;
+}
+
+.input-msg-correct{
+    visibility: hidden;
+}
+
+.button{
+    border: medium solid #d9ead3;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgb(49, 40, 83);
+    color: white;
+    background-color: rgb(121, 107, 204);
+
+    height: 30px;
+    margin: 3px;
+    margin-bottom: 20px;
+    
+    width: 100%;
+
+} 
+
+.dato{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
